@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+
+     <script src="{{url_for('static',filename='questions.js')}}"></script>
+    <script src="{{url_for('static',filename='results.js')}}"></script>
+    <script src="{{url_for('static',filename='timer.js')}}" defer></script>
+    <script src="{{url_for('static',filename='script_questions.js')}}" defer></script>
+    <script src="{{url_for('static',filename='script_activity.js')}}" defer></script>
+    <script src="{{url_for('static',filename='camera_handle.js')}}" defer></script>
+    <script src="{{url_for('static',filename='fullScreen.js')}}" defer></script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="timer"></h1>
+        <h1 id="question"></h1>
+
+        <div id="options"></div>
+        
+
+        <button id="MakeFullScreen" onclick="MakeFullScreen()">
+            Enter Full Screen
+        </button>
+
+        <div id="buttons"></div>
+
+    </div>
+
+<div id="videostream"></div>
+
+</body>
+</html>
